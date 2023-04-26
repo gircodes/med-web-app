@@ -100,7 +100,7 @@ Design Consideration includes :
 
 MERN Stack stands for MongoDB, Express, React, Node.js
 
-[[/assets/mern.jpg]]  
+[[assets/mern.jpg]]  
 
 **MongoDB** - is a document-oriented database program based on NoSQL.  
 **Express** - is a robust Node.js web application framework that helps in creating powerful REST APIs.  
