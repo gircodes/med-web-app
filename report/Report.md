@@ -148,7 +148,7 @@ PATIENT's JOURNEY :
 - 11/12  Makes a zoom call with the 'Patient Call Link' at the scheduled time.   39
 - 12/12  Follows doctors advice.  🙏
 
-<img src="ptn-jrny.gif">  
+<img src="https://github.com/gircodes/med-web-app/blob/main/report/assets/ptn-jrny.gif">
 
 
 DOCTOR's JOURNEY : 
@@ -166,7 +166,7 @@ DOCTOR's JOURNEY :
 - 12/13  If the appointment is not successful, the status is marked as 'cancelled'.  21
 - 13/13  Irrelavant appointments are deleted by the doctor.  21
 
-<img src="doc-jrny.gif">  
+<img src="https://github.com/gircodes/med-web-app/blob/main/report/assets/doc-jrny.gif">
 
 Note: 
 - Doctor can edit only 'Status', 'Patient Call Link' and 'Prescription' of an individual appointment.
