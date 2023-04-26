@@ -100,8 +100,6 @@ Design Consideration includes :
 
 MERN Stack stands for MongoDB, Express, React, Node.js
 
-[[assets/mern.jpg]]  
-
 <img src="assets/mern.jpg">
 
 **MongoDB** - is a document-oriented database program based on NoSQL.  
@@ -150,7 +148,7 @@ PATIENT's JOURNEY :
 - 11/12  Makes a zoom call with the 'Patient Call Link' at the scheduled time.   39
 - 12/12  Follows doctors advice.  🙏
 
-![[ptn-jrny.gif]]  
+<img src="ptn-jrny.gif">  
 
 
 DOCTOR's JOURNEY : 
@@ -168,7 +166,7 @@ DOCTOR's JOURNEY :
 - 12/13  If the appointment is not successful, the status is marked as 'cancelled'.  21
 - 13/13  Irrelavant appointments are deleted by the doctor.  21
 
-![[doc-jrny.gif]]  
+<img src="doc-jrny.gif">  
 
 Note: 
 - Doctor can edit only 'Status', 'Patient Call Link' and 'Prescription' of an individual appointment.
