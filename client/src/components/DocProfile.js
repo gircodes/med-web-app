@@ -11,7 +11,7 @@ function DocProfile(props) {
 
   useEffect(() => {
     axios
-      .get('http://localhost:4000/doc/prm', {params: {name:name}})
+      .get('https://med-web-node.onrender.com/doc/prm', {params: {name:name}})  //http://localhost:4000
       .then((res) => {
         setDoc(res.data);
       })
