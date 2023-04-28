@@ -20,7 +20,7 @@ function UpdateDocInfo(props) {
 
   useEffect(() => {
     axios
-      .get('http://localhost:4000/doc/prm', {params:{id:id}})
+      .get('https://med-web-node.onrender.com/doc/prm', {params:{id:id}})  //http://localhost:4000
       .then((res) => {
         setDoc({
           name: res.data.name,
@@ -56,7 +56,7 @@ function UpdateDocInfo(props) {
     };
 
     axios
-      .put(`http://localhost:4000/doc/${id}`, data)
+      .put(`https://med-web-node.onrender.com/doc/${id}`, data)   //http://localhost:4000
       .then((res) => {
         navigate(`/dProfile/${data.name}`);
       })
