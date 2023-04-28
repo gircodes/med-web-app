@@ -18,7 +18,7 @@ function Login (props) {
     if (email.length >= 0) {
       if (password.length >= 0) {
         if (isdoctor) {
-          axios.get('http://localhost:4000/doc/prm', {params: {pwd:password, email:email}})
+          axios.get('https://med-web-node.onrender.com', {params: {pwd:password, email:email}})  //http://localhost:4000/doc/prm
           .then((res) => {
             if (email === res.data.email) {
               window.iname = res.data.name;
