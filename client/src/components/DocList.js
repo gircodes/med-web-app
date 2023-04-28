@@ -9,7 +9,7 @@ function DocList() {
   const active = 'Yes';
 
   useEffect(() => {
-      axios.get('http://localhost:4000/doc/prm', {
+      axios.get('https://med-web-node.onrender.com/doc/prm', {  //http://localhost:4000
         params: {active: active}})
       .then((res) => {setDocs(res.data);})
       .catch((err) => {
