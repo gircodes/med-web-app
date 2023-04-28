@@ -18,7 +18,7 @@ function Login (props) {
     if (email.length >= 0) {
       if (password.length >= 0) {
         if (isdoctor) {
-          axios.get('https://med-web-node.onrender.com', {params: {pwd:password, email:email}})  //http://localhost:4000/doc/prm
+          axios.get('https://med-web-node.onrender.com/doc/prm', {params: {pwd:password, email:email}})  //http://localhost:4000
           .then((res) => {
             if (email === res.data.email) {
               window.iname = res.data.name;
@@ -28,7 +28,7 @@ function Login (props) {
             // console.log('Error D2 from Login' + err);
             alert('Password and/or email mismatch, please try again.')});
         } else {
-          axios.get('http://localhost:4000/ptnt/prm', {params: {pwd:password, email:email}})
+          axios.get('https://med-web-node.onrender.com/ptnt/prm', {params: {pwd:password, email:email}})  //http://localhost:4000
           .then((res) => {
             if (email === res.data.email) {
               window.iname = res.data.name;
