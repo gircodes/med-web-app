@@ -31,7 +31,7 @@ const BookApmnt = (props) => {
     apmntRec.date = startDate;
 
     axios
-      .post('http://localhost:4000/apmnt', apmntRec)
+      .post('https://med-web-node.onrender.com/apmnt', apmntRec)  //http://localhost:4000
       .then((res) => {
         setApmntRec({
           date: '',
