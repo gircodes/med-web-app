@@ -11,7 +11,7 @@ function PtntProfile(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/ptnt/prm`, {params: {name:name}})
+      .get(`https://med-web-node.onrender.com/ptnt/prm`, {params: {name:name}})  //http://localhost:4000
       .then((res) => {
         setPtnt(res.data);
       })
@@ -23,7 +23,7 @@ function PtntProfile(props) {
 
   // const onDeleteClick = (id) => {
   //   axios
-  //     .delete(`http://localhost:4000/ptnt/${id}`)
+  //     .delete(`https://med-web-node.onrender.com/ptnt/${id}`)  //http://localhost:4000
   //     .then((res) => {
   //       alert('Patient deleted');
   //       navigate('/');
