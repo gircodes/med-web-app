@@ -23,7 +23,7 @@ const PtntProfileNew = (props) => {
     e.preventDefault();
 
     axios
-      .post('http://localhost:4000/ptnt', ptnt)
+      .post('https://med-web-node.onrender.com/ptnt', ptnt)  //http://localhost:4000
       .then((res) => {
         setPtnt({
           name: '',
