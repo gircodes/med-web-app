@@ -29,7 +29,7 @@ function PtntApmntEdt(props) {
 
   useEffect(() => {
     axios
-      .get('http://localhost:4000/apmnt/gbid', {params:{id:id}})
+      .get('https://med-web-node.onrender.com/apmnt/gbid', {params:{id:id}})  //http://localhost:4000
       .then((res) => {
         setApmnt({
           status: res.data.status,
@@ -72,7 +72,7 @@ function PtntApmntEdt(props) {
     };
 
     axios
-      .put(`http://localhost:4000/apmnt/${id}`, data)
+      .put(`https://med-web-node.onrender.com/apmnt/${id}`, data)  //http://localhost:4000
       .then((res) => {
         navigate(`/aList`);
       })
