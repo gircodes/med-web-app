@@ -23,7 +23,7 @@ const DocProfileNew = (props) => {
     e.preventDefault();
 
     axios
-      .post('http://localhost:4000/doc', doc)
+      .post('https://med-web-node.onrender.com/doc', doc)  //http://localhost:4000
       .then((res) => {
         setDoc({
           name: '',
