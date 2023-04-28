@@ -20,7 +20,7 @@ function UpdatePtntInfo(props) {
 
   useEffect(() => {
     axios
-      .get('http://localhost:4000/ptnt/prm', {params: {id:id}})
+      .get('https://med-web-node.onrender.com/ptnt/prm', {params: {id:id}})  //http://localhost:4000
       .then((res) => {
         setPtnt({
           name: res.data.name,
@@ -55,7 +55,7 @@ function UpdatePtntInfo(props) {
     };
 
     axios
-      .put(`http://localhost:4000/ptnt/${id}`, data)
+      .put(`https://med-web-node.onrender.com/ptnt/${id}`, data)  //http://localhost:4000
       .then((res) => {
         navigate(`/pProfile/${data.name}`);
       })
