@@ -11,11 +11,11 @@ function ApmntList(props) {
 
   const loadData = () => {
     if (window.isadoc) {
-      axios.get('http://localhost:4000/apmnt/prmD', {params: {doctor:name}})
+      axios.get('https://med-web-node.onrender.com/apmnt/prmD', {params: {doctor:name}})  //http://localhost:4000
       .then((res) => {setApmnts(res.data);})
       .catch((err) => {console.log('Error 1 from ApmntList');} );
     } else {
-      axios.get('http://localhost:4000/apmnt/prmP', {params: {patient:name}})
+      axios.get('https://med-web-node.onrender.com/apmnt/prmP', {params: {patient:name}})  //http://localhost:4000
         .then((res) => {setApmnts(res.data);})
         .catch((err) => {console.log('Error 2 from ApmntList');});
     }
