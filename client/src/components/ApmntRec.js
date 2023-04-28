@@ -8,7 +8,7 @@ const ApmntRec = (props) => {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:4000/apmnt/${id}`)
+      .delete(`https://med-web-node.onrender.com/apmnt/${id}`)  //http://localhost:4000
       .then((res) => {
         alert('Appointment is deleted');
         props.handler();
