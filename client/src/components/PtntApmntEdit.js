@@ -35,7 +35,7 @@ function PtntApmntEdt(props) {
           status: res.data.status,
           date: (new Date(res.data.date)).toLocaleDateString('en-GB', { 
                 year: 'numeric', month: 'short', day: 'numeric', 
-                hour: '2-digit', minute: '2-digit'}),
+                hour: '2-digit', minute: '2-digit', timeZoneName: 'short'}),
           doctor: res.data.doctor,
           patient: res.data.patient,
           ptntcall: res.data.ptntcall,
@@ -61,7 +61,6 @@ function PtntApmntEdt(props) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log('2> '+flag);
     if (flag === true) {
       apmnt.date = startDate; 
     }
